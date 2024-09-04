@@ -15,8 +15,8 @@
 
     </header>
     <!--  -->
-    <section class="my-3">
-        <div class="grid grid-cols-1 gap-2 place-content-center md:grid-cols-4">
+    <section class="my-3 flex  gap-2">
+        <div class="grid grid-cols-1 gap-2 place-content-center md:grid-cols-3">
             <div class="md:w-72 h-80  flex justify-center border border-gray-200 rounded-md">
                 <div class="my-2">
                     <div class="min-h-36">
@@ -31,15 +31,15 @@
                     <div>
 
                         <div class="flex justify-center items-center mt-3">
-                            <input type="number" name="number" placeholder="b"
+                            <input type="number" name="number" placeholder="b" id="tri1"
                                 class="w-10 h-6 bg-[#f1f1f1] focus:outline-none mr-3 px-2">
                             <span>cm</span>
-                            <input type="number" name="number" placeholder="h"
+                            <input type="number" name="number" id="tri2" placeholder="h"
                                 class="w-10 h-6 bg-[#f1f1f1] focus:outline-none mx-3 px-2">
                             <span>cm</span>
 
                         </div>
-                        <button
+                        <button id="triangle-btn"
                             class="bg-[#1090d8] h-8 w-full rounded text-white mt-3 hover:bg-blue-400 transition-colors duration-100">Calculate</button>
                     </div>
                 </div>
@@ -189,7 +189,13 @@
 
 
         </div>
+        <div class="h-20 border border-gray-200 w-[350px] min-h-80 p-5 rounded">
+            <h1 class="text-center text-2xl font-bold">Area Calculation</h1>
+            <div id="result-area" class="text-center text-3xl"></div>
+
+        </div>
     </section>
+    <script src="./index.js"></script>
 </body>
 
 </html>
